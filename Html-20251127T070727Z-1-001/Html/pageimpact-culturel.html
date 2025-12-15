@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> WikiGameFight-Accueil </title>
+        <meta charset="utf-8"/>
+<style>
+.image-contour {
+    border: 10px solid rgb(140, 140, 140);
+    border-radius: 20px;
+    display: block;
+    width: 600px;
+    height: 400px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+.image-contour:hover {
+    transform: scale(1.05);
+  }
+
+.texte-sous-image-SMB {
+    text-align: center;
+    font-size : 40px;
+    margin-top: 20px;
+    color: rgb(254, 206, 102);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+.texte-sous-image-SMB:hover {
+    transform: scale(1.05);
+  }
+</style>
+
+<style>
+.menu {
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(254, 206, 102);
+    position: absolute; top : -10px; right : 200px
+  }
+
+.menu:hover {
+    text-decoration: underline;
+  }
+</style>
+    </head>
+    <body style="background-color: rgb(80, 80, 80);">
+        <h1 style="color: rgb(254, 206, 102);">WikiGameFight</h1>
+<a href="nouvellepage.html" target="_blank"
+   style="padding: 10px 20px; font-size: 16px; border-radius: 8px;
+          position: absolute; top: 10px; right: 10px;
+          background-color: #eee; text-decoration: none; color: black;
+          display: inline-block;">
+    Menu
+</a>
+
+<p class="menu">Menu</p>
+
+<div style="display: flex; flex-direction: column; align-items: center; margin-top: 350px;">
+<a href="pagehistoire.html" target="_blank" style="text-decoration: none;">
+<img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_SuperSmashBrosUltimate_02_image1600w.jpg" class="image-contour">
+<p class="texte-sous-image-SMB">Start</p>
+</a>
+</div>
+
+    </body>
+</html>

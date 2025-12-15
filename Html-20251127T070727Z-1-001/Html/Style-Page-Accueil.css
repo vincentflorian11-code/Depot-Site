@@ -1,0 +1,413 @@
+.image-contour1 {
+    border: 0.9vw solid rgb(140, 140, 140); /*bordure du cadre + taille + couleurs (stroke)*/
+    border-radius: 2vw; /*arrondissement du cadre (stroke)*/
+    display: block; /*comportement comme une boite, block*/
+    width: 16.5vw; /*définir la largeur*/
+    height: 16.5vw; /*définir la hauteur*/
+    position: absolute; right : 40.4vw; top : 21.8vw; /* définir la position du cadre*/
+    object-fit: cover; /*éviter le débordement de l'image (gardera tj sa taille)*/
+    cursor: pointer; /*pour que le curseur soit détecter*/
+    transition: transform 0.3s ease; /*transition qui permet d'extendre le cadre en 0.3s*/
+  }
+  
+.image-contour1:hover {
+    transform: scale(1.05); /*augmenter la taille de 1.05 du cadre*/
+  }
+
+.image-contour2 {
+    border: 0.9vw solid rgb(140, 140, 140);
+    border-radius: 2vw;
+    display: block;
+    width: 16.5vw;
+    height: 16.5vw;
+    object-fit: cover;
+    position: absolute; right : 21vw; top : 20vw;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+.image-contour2:hover {
+    transform: scale(1.05);
+  }
+
+.image-contour3 {
+    border: 0.9vw solid rgb(140, 140, 140);
+    border-radius: 2vw;
+    display: block;
+    width: 16.5vw;
+    height: 16.5vw;
+    object-fit: cover;
+    position: absolute; right : 1.5vw; top : 18vw;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+.image-contour3:hover {
+    transform: scale(1.05);
+  }
+
+.image-contour4 {
+    border: 0.9vw solid rgb(140, 140, 140);
+    border-radius: 2vw;
+    display: block;
+    width: 16.5vw;
+    height: 16.5vw;
+    object-fit: cover;
+    position: absolute; left : 21vw; top : 20vw;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+.image-contour4:hover {
+    transform: scale(1.05);
+  }
+
+.image-contour5 {
+    border: 0.9vw solid rgb(140, 140, 140);
+    border-radius: 2vw;
+    display: block;
+    width: 16.5vw;
+    height: 16.5vw;
+    object-fit: cover;
+    position: absolute; left : 1.5vw; top : 18vw;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+.image-contour5:hover {
+    transform: scale(1.05);
+  }
+
+.texte-sous-image-SMB {
+    text-align: center; /*aligner le contenu au centre*/
+    font-size : 3vw; /* taille du texte*/
+    position: absolute; right : 47.2vw; top : 37.8vw; /*position du texte*/
+    color: rgb(254, 206, 102); /*couleur du texte*/
+    cursor: pointer; /*pour que le curseur soit détecter*/
+    transition: transform 0.3s ease; /*transition qui permet d'extendre le cadre en 0.3s*/
+  }
+
+.texte-sous-image-SMB:hover {
+    transform: scale(1.05); /*augmenter la taille de 1.05 du cadre*/
+  }
+
+.texte-sous-image-histoires-des-jeux {
+    text-align: center;
+    font-size : 2.5vw;
+    position: absolute; right : 21vw; top : 37vw;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+.texte-sous-image-histoires-des-jeux:hover {
+    transform: scale(1.05);
+  }
+
+.texte-sous-image-evolution {
+    text-align: center;
+    font-size : 2.5vw;
+    position: absolute; right : 5.5vw; top : 35vw;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+.texte-sous-image-evolution:hover {
+    transform: scale(1.05);
+  }
+
+.texte-sous-image-e-sport {
+    text-align: center;
+    position: absolute; left : 26.5vw; top : 37vw;
+    font-size : 2.5vw;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+.texte-sous-image-e-sport:hover {
+    transform: scale(1.05);
+  }
+
+.texte-sous-image-impact-culturel {
+    text-align: center;
+    position: absolute; left : 3vw; top : 35vw;
+    font-size : 2.5vw;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+.texte-sous-image-impact-culturel:hover {
+    transform: scale(1.05);
+  }
+
+.texte-menu-sélection {
+    text-align: center; /*aligner le contenu au centre*/
+    font-size : 3.5vw; /* taille du texte*/
+    color: rgb(255, 255, 255); /*couleur du texte*/
+    position: absolute; top : 2vw; /*position du menu*/
+  }
+
+.texte-menu-sélection2 {
+    text-align: center;
+    font-size : 3vw;
+    color: rgb(254, 206, 102);
+    position: absolute; top : 10vw;
+  }
+
+.image-background {
+    height : 55vw; /*hauteur de l'image de fond*/
+    overflow: hidden; /*cacher la barre de scroll / empêche le scroll*/
+    background-image: url("https://i.pinimg.com/originals/ae/b2/03/aeb20389941179b4cc4d0185f9ee1664.jpg"); /*définir l'image*/
+    background-size: cover; /*éviter le débordement de l'image (gardera tj sa taille)*/
+    background-repeat: no-repeat; /*éviter les répétitions de l'image*/
+    background-position: center; /*centrer l'image*/
+}
+
+.container-images {
+    display: flex; /*assure que les éléments fils directs seront alignés sur une lign*/
+    justify-content: center; /*centrer le container*/
+    align-items: flex-start; /*aligner les images verticalement*/
+}
+
+.btn1 {
+    border: 0.2vw solid rgb(201, 163, 81); /*bordure du cadre + taille + couleurs (stroke)*/
+    display: inline-block; /*reste en ligne*/
+    padding: 0.8vw 1.5vw; /*taille du bouton vertical, horizontale*/
+    background-color: rgb(254, 206, 102); /*couleur de l'arrière plan*/
+    color: white; /*couleur du texte*/
+    text-decoration: none; /*enlever les soulignements avec les liens par ex*/
+    border-radius: 3vw; /*arrondissement du bouton (stroke)*/
+    font-size: 1vw; /*augmente la taille du texte*/
+    transition: transform 0.3s ease; /*transition qui permet d'extendre le cadre en 0.3s*/
+    position: absolute; right : 17vw; top : 1vw; /*position du bouton*/
+}
+
+.btn1:hover {
+    transform: scale(1.05); /*augmenter la taille de 1.05 du bouton*/
+    background-color: rgb(222, 165, 41); /*couleur du bouton qui change en ayant le curseur dessus*/
+}
+
+.btn2 {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);
+    color: white;
+    text-decoration: none;
+    border-radius: 3vw;
+    font-size: 1vw;
+    transition: transform 0.3s ease;
+    position: absolute; right : 9.4vw; top : 1vw;
+}
+
+.btn2:hover {
+    transform: scale(1.05);
+    background-color: rgb(222, 165, 41);
+}
+
+.btn3 {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);
+    color: white;
+    text-decoration: none;
+    border-radius: 3vw;
+    font-size: 1vw;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: absolute; right : 0.5vw; top : 1vw;
+}
+
+.btn3:hover {
+    transform: scale(1.05);
+    background-color: rgb(222, 165, 41);
+}
+
+.btnHistoire {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1vw;
+    font-size: 1vw;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btnHistoire:hover {
+    transform: scale(1.03);
+    background-color: rgb(222, 165, 41);
+}
+
+.btnEvolution {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1vw;
+    font-size: 1vw;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btnEvolution:hover {
+    transform: scale(1.03);
+    background-color: rgb(222, 165, 41);
+}
+
+.btnEsport {
+    border: 0.15vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);    
+    background-position: center; 
+    color: white;
+    text-decoration: none;
+    border-radius: 1vw;
+    font-size: 1vw;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btnEsport:hover {
+    transform: scale(1.03);
+    background-color: rgb(222, 165, 41);
+}
+
+.btnImpact {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1vw;
+    font-size: 1vw;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btnImpact:hover {
+    transform: scale(1.03);
+    background-color: rgb(222, 165, 41);
+}
+
+.btnAccueil {
+    border: 0.2vw solid rgb(201, 163, 81); /*bordure du cadre + taille + couleurs (stroke)*/
+    display: inline-block; /*reste en ligne*/
+    padding: 0.8vw 1.5vw; /*taille du bouton vertical, horizontale*/
+    background-color: rgb(254, 206, 102); /*couleur de l'arrière plan*/
+    color: white; /*couleur du texte*/
+    text-decoration: none; /*enlever les soulignements avec les liens par ex*/
+    border-radius: 3vw; /*arrondissement du bouton (stroke)*/
+    font-size: 1vw; /*augmente la taille du texte*/
+    transition: transform 0.3s ease; /*transition qui permet d'extendre le cadre en 0.3s*/
+    position: absolute; right : 25vw; top : 1vw; /*position du bouton*/
+}
+
+.btnAccueil:hover {
+    transform: scale(1.05); /*augmenter la taille de 1.05 du bouton*/
+    background-color: rgb(222, 165, 41); /*couleur du bouton qui change en ayant le curseur dessus*/
+}
+
+.MenuAccueil {
+    color: rgb(254, 206, 102);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vw;
+    transition: transform 0.3s ease;
+    position: absolute; left : 1vw; top : 1vw;
+}
+
+.dropdown {
+    position: absolute; right : 0vw; top : 0vw; 
+    display: inline-block;
+}
+
+/* MENU CACHÉ1 */
+.dropdown-child {
+    display: none;
+    position: relative;
+    margin-top : 3.8vw;
+    padding: 0.4vw;
+    z-index: 2;
+}
+
+/* Liens du menu */
+.dropdown-child a {
+    padding: 0.45vw;
+    text-decoration: none;
+    display: block;
+}
+
+.btnHistoireShow {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-image: url('https://segaretro.org/images/4/47/HeavyweightChamp_SMS_title.png');
+    background-size: cover;
+    background-position: center; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3vw;
+    font-size: 1vw;
+    position : absolute;
+    z-index: 3;
+}
+
+.btnEvolutionShow {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-image: url('https://i.ytimg.com/vi/ruMaTvyXwm4/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3vw;
+    font-size: 1vw;
+    position : absolute;
+    z-index: 3;
+}
+
+.btnEsportShow {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-image: url('https://lesnews.ca/jovohiq/2025/11/18-evo-announcement-show-earlyt.webp.webp');
+    background-size: cover;
+    background-position: center; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3vw;
+    font-size: 1vw;
+    position : absolute;
+    z-index: 3;
+}
+
+.btnImpactShow {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-image: url('https://www.rabbits-games.fr/wp-content/uploads/2023/06/salle-arcade-retrogaming-froissy.jpg');
+    background-size: cover;
+    background-position: center; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3vw;
+    font-size: 1vw;
+    position : absolute;
+    z-index: 3;
+}

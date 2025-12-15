@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+        <title> WikiGameFight-Contact </title> <!-- titre de la page -->
+        <link rel="icon" type="image/png" href="logopageaccueil.png"> <!-- logo de la page -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Style-Page-Contact.css">
+    </head>
+    <body class="image-background"> <!--image arrière plan-->
+      
+<div class="container-images">
+<a href="pagestart.html" target="_blank" style="text-decoration: none;"></a> <!--lors du clic, affiche une nouvelle page dans un nouvel onglet et aussi aucun soulignement (tout le contenu)-->
+<a href="Site_Internet_WikiGameFight.html" class="MenuAccueil"><strong>WikiGameFight</strong></a> <!--quand cliqué retourne sur la page d'accueil, texte en couleur et sans soulignement (dans la page actuelle)-->
+<a href="Apropos-Page.html" class="btn1">A Propos</a> <!--quand bouton cliqué : lien vers une autre page-->
+<a href="Contact-Page.html" class="btn2">Contact</a> <!--quand bouton cliqué : lien vers une autre page-->
+<a href="Site_Internet_WikiGameFight.html" class="btnAccueil">Page d'accueil</a> <!--quand bouton cliqué : lien vers une autre page-->
+<p class="contact"><strong>Contact</strong></p> <!--le texte avec les paramètres de texte-menu-sélection-->
+<p class="nouscontacter" ><strong>Pour nous contacter :</strong></p> <!--le texte avec les paramètres de texte-menu-sélection-->
+<p class="ReseauxSociaux" ><strong>Réseaux Sociaux :</strong></p> <!--le texte avec les paramètres de texte-menu-sélection-->
+<p class="Informations" ><strong>Informations :</strong></p> <!--le texte avec les paramètres de texte-menu-sélection-->
+<input type="text" class="CadreInfo">
+<div class="dropdown">
+    <a class="btn3" id="navBtn">Navigation</a>
+    <div class="dropdown-child" id="menu">
+        <a style="margin-top: 2.3vw;" class="btnHistoireShow"></a>
+        <a href="pagehistoire.html" style="margin-top: 0.65vw;" class="btnHistoire">Histoire des jeux</a>
+        <a style="margin-top: 2.3vw;" class="btnEvolutionShow"></a>
+        <a href="pageevolution.html" style="margin-top: 0.65vw;" class="btnEvolution">Évolution</a>
+        <a style="margin-top: 2.3vw;" class="btnEsportShow"></a>
+        <a href="pagee-sport.html" style="margin-top: 0.65vw;" class="btnEsport">E-Sport</a>
+        <a style="margin-top: 2.3vw;" class="btnImpactShow"></a>
+        <a href="pageimpact-culturel.html" style="margin-top: 0.65vw;" class="btnImpact">Impact Culturel</a>
+        
+    </div>
+</div>
+<form id="avisForm">
+  <input type="text" id="nom" name="nom" class="textboxNom" placeholder="Votre Nom" required>
+  <input type="email" id="email" name="email" class="textboxEmail" placeholder="Votre Email" required>
+  <input type="text" id="rate" name="rate" class="textboxRate" placeholder="Rate 1-5 notre Site" required>
+  <textarea id="message" name="message" class="textboxContenu"  placeholder="Votre avis" required></textarea>
+  <button type="submit"class="btnEnvoyer">Envoyer</button>
+</form>
+</div>
+
+<script>
+document.getElementById("rate").addEventListener("input", function () {
+    // Supprime tout sauf les chiffres
+    this.value = this.value.replace(/[^0-9]/g, "");
+    // Limite à 1 chiffre
+    this.value = this.value.slice(0, 1);
+});
+</script>
+
+<script>
+document.getElementById("navBtn").addEventListener("click", function () {
+    let menu = document.getElementById("menu");
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+});
+</script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "5sq6Rm7dnyEmAr6f9",
+      });
+   })();
+</script>
+
+<script>
+document.getElementById("avisForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // empêche l’envoi classique
+
+    // Récupère les valeurs du formulaire
+    var nom = document.getElementById("nom").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    var rate = document.getElementById("rate").value;
+
+    // Préparer les paramètres pour le template EmailJS
+    var templateParams = {
+        nom: nom,
+        email: email,
+        message: message,
+        time: new Date().toLocaleString(),
+        title: "Avis Internautes :",
+        rate: rate
+    };
+
+    // Envoi via EmailJS
+    emailjs.send('service_lu2b7de', 'template_cm7n2wb', templateParams)
+        .then(function(response) {
+            alert("Avis envoyé avec succès !");
+            document.getElementById("avisForm").reset(); // vide le formulaire
+        }, function(error) {
+            alert("Erreur lors de l'envoi : " + JSON.stringify(error));
+        });
+});
+</script>
+    
+</body></html>

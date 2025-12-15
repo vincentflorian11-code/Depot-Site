@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+        <title> WikiGameFight-Apropos </title> <!-- titre de la page -->
+        <link rel="icon" type="image/png" href="logopageaccueil.png"> <!-- logo de la page -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Style-Page-Apropos.css">
+    </head>
+    <body class="image-background"> <!--image arrière plan-->
+      
+<div class="container-images">
+<a href="pagestart.html" target="_blank" style="text-decoration: none;"></a> <!--lors du clic, affiche une nouvelle page dans un nouvel onglet et aussi aucun soulignement (tout le contenu)-->
+<a href="Site_Internet_WikiGameFight.html" class="MenuAccueil"><strong>WikiGameFight</strong></a> <!--quand cliqué retourne sur la page d'accueil, texte en couleur et sans soulignement (dans la page actuelle)-->
+<a href="Apropos-Page.html" class="btn1">A Propos</a> <!--quand bouton cliqué : lien vers une autre page-->
+<a href="Contact-Page.html" class="btn2">Contact</a> <!--quand bouton cliqué : lien vers une autre page-->
+<a href="Site_Internet_WikiGameFight.html" class="btnAccueil">Page d'accueil</a> <!--quand bouton cliqué : lien vers une autre page-->
+<div class="dropdown">
+    <a class="btn3" id="navBtn">Navigation</a>
+    <div class="dropdown-child" id="menu">
+        <a style="margin-top: 2.3vw;" class="btnHistoireShow"></a>
+        <a href="pagehistoire.html" style="margin-top: 0.65vw;" class="btnHistoire">Histoire des jeux</a>
+        <a style="margin-top: 2.3vw;" class="btnEvolutionShow"></a>
+        <a href="pageevolution.html" style="margin-top: 0.65vw;" class="btnEvolution">Évolution</a>
+        <a style="margin-top: 2.3vw;" class="btnEsportShow"></a>
+        <a href="pagee-sport.html" style="margin-top: 0.65vw;" class="btnEsport">E-Sport</a>
+        <a style="margin-top: 2.3vw;" class="btnImpactShow"></a>
+        <a href="pageimpact-culturel.html" style="margin-top: 0.65vw;" class="btnImpact">Impact Culturel</a>
+        
+    </div>
+</div>
+</div>
+
+<script>
+document.getElementById("navBtn").addEventListener("click", function () {
+    let menu = document.getElementById("menu");
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+});
+</script>
+    
+</body></html>
