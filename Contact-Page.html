@@ -42,15 +42,6 @@
 </div>
 
 <script>
-document.getElementById("rate").addEventListener("input", function () {
-    // Supprime tout sauf les chiffres
-    this.value = this.value.replace(/[^0-9]/g, "");
-    // Limite à 1 chiffre
-    this.value = this.value.slice(0, 1);
-});
-</script>
-
-<script>
 document.getElementById("navBtn").addEventListener("click", function () {
     let menu = document.getElementById("menu");
 
@@ -89,7 +80,7 @@ document.getElementById("avisForm").addEventListener("submit", function(e) {
         email: email,
         message: message,
         time: new Date().toLocaleString(),
-        title: "Avis Internautes :",
+        title: "Avis Internautes :"
         rate: rate
     };
 
