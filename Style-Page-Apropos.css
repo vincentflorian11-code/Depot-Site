@@ -1,0 +1,266 @@
+.image-background {
+    height : 55vw; /*hauteur de l'image de fond*/
+    overflow: hidden; /*cacher la barre de scroll / empêche le scroll*/
+    background-image: url("https://i.pinimg.com/originals/ae/b2/03/aeb20389941179b4cc4d0185f9ee1664.jpg"); /*définir l'image*/
+    background-size: cover; /*éviter le débordement de l'image (gardera tj sa taille)*/
+    background-repeat: no-repeat; /*éviter les répétitions de l'image*/
+    background-position: center; /*centrer l'image*/
+}
+
+.image-contour {
+    border: 0.9vw solid rgb(140, 140, 140); /*bordure du cadre + taille + couleurs (stroke)*/
+    border-radius: 2vw; /*arrondissement du cadre (stroke)*/
+    display: block; /*comportement comme une boite, block*/
+    width: 16.5vw; /*définir la largeur*/
+    height: 16.5vw; /*définir la hauteur*/
+    position: absolute; right : 40.4vw; top : 21.8vw; /* définir la position du cadre*/
+    object-fit: cover; /*éviter le débordement de l'image (gardera tj sa taille)*/
+    cursor: pointer; /*pour que le curseur soit détecter*/
+    transition: transform 0.3s ease; /*transition qui permet d'extendre le cadre en 0.3s*/
+  }
+
+.btn1 {
+    border: 0.2vw solid rgb(201, 163, 81); /*bordure du cadre + taille + couleurs (stroke)*/
+    display: inline-block; /*reste en ligne*/
+    padding: 0.8vw 1.5vw; /*taille du bouton vertical, horizontale*/
+    background-color: rgb(254, 206, 102); /*couleur de l'arrière plan*/
+    color: white; /*couleur du texte*/
+    text-decoration: none; /*enlever les soulignements avec les liens par ex*/
+    border-radius: 3vw; /*arrondissement du bouton (stroke)*/
+    font-size: 1vw; /*augmente la taille du texte*/
+    transition: transform 0.3s ease; /*transition qui permet d'extendre le cadre en 0.3s*/
+    position: absolute; right : 17vw; top : 1vw; /*position du bouton*/
+}
+
+.btn1:hover {
+    transform: scale(1.05); /*augmenter la taille de 1.05 du bouton*/
+    background-color: rgb(222, 165, 41); /*couleur du bouton qui change en ayant le curseur dessus*/
+}
+
+.btn2 {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);
+    color: white;
+    text-decoration: none;
+    border-radius: 3vw;
+    font-size: 1vw;
+    transition: transform 0.3s ease;
+    position: absolute; right : 9.4vw; top : 1vw;
+}
+
+.btn2:hover {
+    transform: scale(1.05);
+    background-color: rgb(222, 165, 41);
+}
+
+.btn3 {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);
+    color: white;
+    text-decoration: none;
+    border-radius: 1vw;
+    font-size: 1vw;
+    transition: transform 0.3s ease;
+    position: absolute; right : 0.5vw; top : 1vw;
+    cursor: pointer;
+}
+
+.btn3:hover {
+    transform: scale(1.05);
+    background-color: rgb(222, 165, 41);
+}
+
+.container-images {
+    display: flex; /*assure que les éléments fils directs seront alignés sur une lign*/
+    justify-content: center; /*centrer le container*/
+    align-items: flex-start; /*aligner les images verticalement*/
+}
+
+.MenuAccueil {
+    color: rgb(254, 206, 102);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vw; 
+    transition: transform 0.3s ease;
+    position: absolute; left : 1vw; top : 1vw;
+}
+
+.btnAccueil {
+    border: 0.2vw solid rgb(201, 163, 81); /*bordure du cadre + taille + couleurs (stroke)*/
+    display: inline-block; /*reste en ligne*/
+    padding: 0.8vw 1.5vw; /*taille du bouton vertical, horizontale*/
+    background-color: rgb(254, 206, 102); /*couleur de l'arrière plan*/
+    color: white; /*couleur du texte*/
+    text-decoration: none; /*enlever les soulignements avec les liens par ex*/
+    border-radius: 3vw; /*arrondissement du bouton (stroke)*/
+    font-size: 1vw; /*augmente la taille du texte*/
+    transition: transform 0.3s ease; /*transition qui permet d'extendre le cadre en 0.3s*/
+    position: absolute; right : 25vw; top : 1vw; /*position du bouton*/
+}
+
+.btnAccueil:hover {
+    transform: scale(1.05); /*augmenter la taille de 1.05 du bouton*/
+    background-color: rgb(222, 165, 41); /*couleur du bouton qui change en ayant le curseur dessus*/
+}
+
+.btnHistoire {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1vw;
+    font-size: 1vw;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btnHistoire:hover {
+    transform: scale(1.03);
+    background-color: rgb(222, 165, 41);
+}
+
+.btnEvolution {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1vw;
+    font-size: 1vw;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btnEvolution:hover {
+    transform: scale(1.03);
+    background-color: rgb(222, 165, 41);
+}
+
+.btnEsport {
+    border: 0.15vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);    
+    background-position: center; 
+    color: white;
+    text-decoration: none;
+    border-radius: 1vw;
+    font-size: 1vw;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btnEsport:hover {
+    transform: scale(1.03);
+    background-color: rgb(222, 165, 41);
+}
+
+.btnImpact {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-color: rgb(254, 206, 102);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1vw;
+    font-size: 1vw;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btnImpact:hover {
+    transform: scale(1.03);
+    background-color: rgb(222, 165, 41);
+}
+
+.dropdown {
+    position: absolute; right : 0vw; top : 0vw; 
+    display: inline-block;
+}
+
+/* MENU CACHÉ1 */
+.dropdown-child {
+    display: none;
+    position: relative;
+    margin-top : 3.8vw;
+    padding: 0.4vw;
+    z-index: 2;
+}
+
+/* Liens du menu */
+.dropdown-child a {
+    padding: 0.45vw;
+    text-decoration: none;
+    display: block;
+}
+
+.btnHistoireShow {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-image: url('https://segaretro.org/images/4/47/HeavyweightChamp_SMS_title.png');
+    background-size: cover;
+    background-position: center; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3vw;
+    font-size: 1vw;
+    position : absolute;
+    z-index: 3;
+}
+
+.btnEvolutionShow {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-image: url('https://i.ytimg.com/vi/ruMaTvyXwm4/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3vw;
+    font-size: 1vw;
+    position : absolute;
+    z-index: 3;
+}
+
+.btnEsportShow {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-image: url('https://lesnews.ca/jovohiq/2025/11/18-evo-announcement-show-earlyt.webp.webp');
+    background-size: cover;
+    background-position: center; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3vw;
+    font-size: 1vw;
+    position : absolute;
+    z-index: 3;
+}
+
+.btnImpactShow {
+    border: 0.2vw solid rgb(201, 163, 81);
+    display: inline-block;
+    padding: 0.8vw 1.5vw;
+    background-image: url('https://www.rabbits-games.fr/wp-content/uploads/2023/06/salle-arcade-retrogaming-froissy.jpg');
+    background-size: cover;
+    background-position: center; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3vw;
+    font-size: 1vw;
+    position : absolute;
+    z-index: 3;
+}
