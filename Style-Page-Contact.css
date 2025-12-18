@@ -393,31 +393,32 @@
 
 .facebook {
     font-size: 3vw;
-    position: absolute; left : 1vw; top : 35vw;
+    position: absolute; left : 1vw; top : 36vw;
     z-index: 4;
 }
 
 .instagram {
     font-size: 3vw;
-    position: absolute; left : 4vw; top : 35vw;
+    position: absolute; left : 10vw; top : 36vw;
     z-index: 4;
 }
 
 .linkedin {
     font-size: 3vw;
-    position: absolute; left : 1vw; top : 36vw;
+    position: absolute; left : 1vw; top : 38vw;
     z-index: 4;
 }
 
 .tiktok {
     font-size: 3vw;
-    position: absolute; left : 4vw; top : 36vw;
+    position: absolute; left : 10vw; top : 38vw;
     z-index: 4;
 }
 
 .youtube {
     font-size: 3vw;
-    position: absolute; left : 1,5vw; top : 37vw;
+    position: absolute; left : 5,5vw; top : 40vw;
     z-index: 4;
 }
+
 
