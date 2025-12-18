@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     /* Image de fond : remplace par le nom correct de ton fichier */
-    background-image: url("https://img.freepik.com/fotos-premium/2d-hero-battle-pvp-arena-background-casual-game-art-design-ai-generative-desenho-de-arte-de-jogo-casual_977463-128.jpg?w=2000"); 
+    background-image: url("https://www.laboiteverte.fr/wp-content/uploads/2013/05/decors-jeu-combat-121-620x465.gif"); 
     background-size: cover;      /* L'image couvre tout l'écran [cite: 1216] */
     background-repeat: no-repeat; /* Pas de répétition [cite: 1213] */
     background-attachment: fixed; /* L'image reste fixe au scroll [cite: 1211] */
@@ -261,3 +261,4 @@
     transform: scale(1.03);
     background-color: rgb(222, 165, 41);
 }
+
