@@ -133,7 +133,7 @@
     text-decoration: underline; /*mettre un soulignement*/
     font-size : 2.5vw; /* taille du texte*/
     color: rgb(255, 255, 255); /*couleur du texte*/
-    position: absolute; left : 1vw; top : 30vw; /*position du menu*/
+    position: absolute; left : 1vw; top : 29vw; /*position du menu*/
     z-index: 2;
 }
 
@@ -429,6 +429,7 @@
     position: absolute; left: 1vw; top: 10vw; /*position du menu*/
     z-index: 4;
 }
+
 
 
 
