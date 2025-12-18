@@ -85,16 +85,16 @@ document.getElementById("avisForm").addEventListener("submit", function(e) {
     };
 
     // Envoi via EmailJS
-    emailjs.send('service_lu2b7de', 'template_cm7n2wb', templateParams)
-        .then(function(response) {
-            alert("Avis envoyé avec succès !");
-            document.getElementById("avisForm").reset(); // vide le formulaire
-        }, function(error) {
-            alert("Erreur lors de l'envoi : " + JSON.stringify(error));
-        });
-});
+    emailjs.send("service_lu2b7de", "template_cm7n2wb", templateParams)
+      .then(function () {
+        alert("Avis envoyé avec succès !");
+        document.getElementById("avisForm").reset();
+      })
+      .catch(function (error) {
+        console.error(error);
+        alert("Erreur lors de l'envoi");
+      });
+  });
 </script>
     
-
 </body></html>
-
