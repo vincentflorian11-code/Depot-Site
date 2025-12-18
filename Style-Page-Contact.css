@@ -423,10 +423,11 @@
 
 .text {
     text-align: center; /*aligner le contenu au centre*/
-    font-size : 2.5vw; /* taille du texte*/
+    font-size : 1.5vw; /* taille du texte*/
     color: rgb(255, 255, 255); /*couleur du texte*/
     position: absolute; left: 1vw; top: 10vw; /*position du menu*/
 }
+
 
 
 
