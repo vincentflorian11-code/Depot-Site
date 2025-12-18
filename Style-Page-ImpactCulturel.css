@@ -1,0 +1,70 @@
+:root {
+    /* Mode Sombre (par défaut) */
+    --fond-page: url("https://www.shutterstock.com/image-illustration/greywhite-gradient-smooth-background-blank-600nw-1985319377.jpg");
+    --couleur-texte: #ffffff; /* [cite: 547, 584] */
+    --couleur-titres: #69dcf1; /* Ton bleu ciel [cite: 586] */
+}
+
+.mode-clair {
+    /* Mode Clair : Fond blanc uni et texte noir */
+    --fond-page: none; /* Supprime l'image [cite: 638] */
+    --couleur-texte: #000000; /* [cite: 584] */
+    --couleur-titres: #000000; /* Titres en noir pour le contraste [cite: 584] */
+    background-color: #ffffff; /* Fond blanc [cite: 637] */
+}
+.page-IMPACT {
+    margin: 0; 
+    padding: 0; 
+    background-image: var(--fond-page); /* Utilise la variable [cite: 425, 638] */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: var(--couleur-texte); /* Utilise la variable [cite: 425, 547] */
+    font-family: Arial, sans-serif;
+    transition: 0.3s; /* Transition fluide */
+}
+
+.hero-img {
+    width: 100%;       /* L'image prend toute la largeur de la page  */
+    max-height: 400px; /* On limite la hauteur pour l'effet bannière  */
+    object-fit: cover; /* Important : cela évite de déformer l'image en la recadrant proprement */
+    display: block;    /* Supprime l'espace vide sous l'image */
+}
+.content-blue-box {
+    text-align: center;      /* Centre tout le texte */
+    /* On réduit le padding du haut pour remonter le titre */
+    padding: 20px 10% 60px 10%; 
+}
+
+.content-blue-box h1, .content-blue-box h2 {
+    color: var(--couleur-titre); /* Utilise la variable bleu ciel ou noir */
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.content-blue-box p {
+    color: var(--couleur-texte); /* Le texte passe de blanc à noir */
+    font-size: 1.2rem;
+    text-align: justify;
+}
+/* Couleur par défaut pour tout le texte (blanc) */
+.content-blue-box {
+    color: #ffffff; /* [cite: 547] */
+}
+
+/* Cible le titre principal H1 (IMPACT CULTUREL...) */
+.content-blue-box h1 {
+    color: #69dcf1; /* Bleu ciel en hexadécimal [cite: 586] */
+    text-transform: uppercase; /* Force les majuscules [cite: 528] */
+    font-size: 3rem; /* [cite: 526] */
+}
+
+/* Cible les titres de sections (LA NAISSANCE..., UNE INFLUENCE..., etc.) */
+/* Note : Si tu as utilisé <h2> dans ton HTML pour ces titres */
+.content-blue-box h2 {
+    color: #7fe7fa; /* Bleu ciel [cite: 582, 586] */
+    text-transform: uppercase; /* [cite: 528] */
+    font-size: 1.8rem; /* [cite: 526] */
+    margin-top: 30px; /* [cite: 477] */
+}
