@@ -213,7 +213,7 @@
 }
 
 .esport-image {
-    
+    width: 100%;
     position: absolute; top : 6vw;
     z-index: 1;
 }
@@ -302,3 +302,4 @@
 .intro-text {
     position: absolute; top: 22vw;
 }
+
