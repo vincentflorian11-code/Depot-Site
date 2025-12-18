@@ -270,7 +270,7 @@
     text-align: center; /*aligner le contenu au centre*/
     font-size : 3vw; /* taille du texte*/
     color: rgb(255, 255, 255); /*couleur du texte*/
-    position: absolute; top: 8vw;
+    position: absolute; top: 5vw;
 }
 
 .txt {
@@ -280,3 +280,4 @@
     position: absolute; top: 15vw;
     max-width: 40vw;
 }
+
