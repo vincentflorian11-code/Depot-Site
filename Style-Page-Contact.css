@@ -399,7 +399,7 @@
 
 .instagram {
     font-size: 2vw;
-    position: absolute; left : 15vw; top : 35vw;
+    position: absolute; left : 10vw; top : 35vw;
     z-index: 4;
 }
 
@@ -411,7 +411,7 @@
 
 .tiktok {
     font-size: 2vw;
-    position: absolute; left : 15vw; top : 38vw;
+    position: absolute; left : 10vw; top : 38vw;
     z-index: 4;
 }
 
@@ -427,6 +427,7 @@
     color: rgb(255, 255, 255); /*couleur du texte*/
     position: absolute; left: 1vw; top: 10vw; /*position du menu*/
 }
+
 
 
 
