@@ -422,13 +422,14 @@
 }
 
 .text {
-    max-width: 20vw;
+    max-width: 30vw;
     text-align: center; /*aligner le contenu au centre*/
-    font-size : 1.5vw; /* taille du texte*/
+    font-size : 2vw; /* taille du texte*/
     color: rgb(255, 255, 255); /*couleur du texte*/
-    position: absolute; left: 1vw; top: 10vw; /*position du menu*/
+    position: absolute; left: 1vw; top: 15vw; /*position du menu*/
     z-index: 4;
 }
+
 
 
 
