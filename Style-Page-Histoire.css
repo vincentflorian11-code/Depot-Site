@@ -44,7 +44,8 @@
     line-height: 1.6;        
     max-width: 1000px;     
     margin: 0 auto 20px auto;
-
+}
+    
 .MenuAccueil {
     color: rgb(254, 206, 102);
     text-decoration: none;
@@ -270,6 +271,7 @@
     transform: scale(1.03);
     background-color: rgb(222, 165, 41);
 }
+
 
 
 
